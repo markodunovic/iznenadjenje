@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fdfbf7; /* Nježna krem pozadina */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Zabranjujemo vertikalni scroll cijelog ekrana */
+}
+
+#album-container {
+    width: 100%;
+    max-width: 450px; /* Ograničenje za telefone */
+    height: 100%;
+    position: relative;
+}
+
+.page {
+    display: none; /* Sakrij sve stranice po defaultu */
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 30px 20px;
+    animation: fadeIn 0.5s ease-in-out;
+    overflow-y: auto; /* Dozvoli scroll unutar same stranice ako ima puno teksta */
+}
+
+.page.active {
+    display: flex; /* Prikaži samo aktivnu stranicu */
+}
+
+.content {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1, h2 {
+    color: #d9777f; /* Roze-zlatna nijansa naslova */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.caption {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 10px 0;
+    object-fit: cover;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.image-grid img {
+    margin: 0;
+    height: 200px;
+}
+
+.letter p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.primary-btn {
+    background-color: #d9777f;
+    color: white;
+}
+
+.secondary-btn {
+    background-color: #e2e2e2;
+    color: #333;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateX(10px); }
+    to { opacity: 1; transform: translateX(0); }
+}

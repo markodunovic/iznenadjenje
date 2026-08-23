@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Za moju sestru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="album-container">
+        
+        <!-- Naslovna strana (Strana 0) -->
+        <div class="page active">
+            <div class="content">
+                <h1>Sretan 30. rođendan! 🎉</h1>
+                <p>Pripremio sam ti malu digitalnu turneju kroz naše uspomene. Spremi se za malo nostalgije i puno smijeha.</p>
+            </div>
+            <button class="btn primary-btn" onclick="nextPage()">Započnimo ovu turneju ➡️</button>
+        </div>
+
+        <!-- Strana sa jednom slikom (Strana 1) -->
+        <div class="page">
+            <div class="content">
+                <p>Sjećaš li se ovog trenutka?</p>
+                <img src="images/" alt="Uspomena 1">
+                <p class="caption">Bili smo tako mali, a ti si već tada voljela da šefuješ. 😂</p>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana sa dvije slike (Strana 2) -->
+        <div class="page">
+            <div class="content">
+                <p>Onda smo malo porasli...</p>
+                <div class="image-grid">
+                    <img src="images/2.jpg" alt="Uspomena 2">
+                    <img src="images/3.jpg" alt="Uspomena 3">
+                </div>
+                <p class="caption">Vrijeme stvarno leti.</p>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Pismo (Zadnja strana) -->
+        <div class="page">
+            <div class="content letter">
+                <h2>Draga moja sestro,</h2>
+                <p>Ovdje ide tvoje konačno pismo. Napiši sve ono lijepo što želiš da joj poručiš za njen jubilarni rođendan.</p>
+                <p>Sretan rođendan!</p>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Prelistaj ponovo</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
