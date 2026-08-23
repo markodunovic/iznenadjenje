@@ -6,13 +6,14 @@
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #fdfbf7; /* Nježna krem pozadina */
+    background-color: #fdfbf7;
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden; /* Zabranjujemo vertikalni scroll cijelog ekrana */
+    height: 100vh; /* Fallback za vrlo stare browsere */
+    height: 100dvh; /* Dynamic Viewport Height - rješava problem navigacionih traka */
+    overflow: hidden; 
 }
 
 #album-container {
@@ -23,13 +24,14 @@ body {
 }
 
 .page {
-    display: none; /* Sakrij sve stranice po defaultu */
+    display: none; 
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 30px 20px;
+    /* Dodajemo veći donji padding i env() funkciju za iPhone "Safe Area" */
+    padding: 30px 20px calc(40px + env(safe-area-inset-bottom));
     animation: fadeIn 0.5s ease-in-out;
-    overflow-y: auto; /* Dozvoli scroll unutar same stranice ako ima puno teksta */
+    overflow-y: auto; 
 }
 
 .page.active {
@@ -91,6 +93,7 @@ img {
     justify-content: space-between;
     gap: 10px;
     margin-top: 20px;
+    margin-bottom: 20px; /* Ovaj red je dodan */
 }
 
 .btn {
