@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Za moju sestru</title>
+    <title>Skriveni poklon</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,18 +13,22 @@
         <!-- Naslovna strana (Strana 0) -->
         <div class="page active">
             <div class="content">
-                <h1>Sretan 30. rođendan! 🎉</h1>
-                <p>Pripremio sam ti malu digitalnu turneju kroz naše uspomene. Spremi se za malo nostalgije i puno smijeha.</p>
+                <h1>Čestitam! 😂🎉</h1>
+                <h1>Našla si skriveni poklon!</h1>
+                <p>Sve što ti još treba je 5 minuta da prođeš kroz ovu digitalnu turneju koju sam pripremio.</p>
+                <p>Spremi se za malo nostalgije i vjerovatno puno smijeha pošto ima svakakvih slika...</p>
             </div>
             <button class="btn primary-btn" onclick="nextPage()">Započnimo ovu turneju ➡️</button>
         </div>
 
-        <!-- Strana sa jednom slikom (Strana 1) -->
+        <!-- Strana 1 (1 slika) -->
         <div class="page">
             <div class="content">
-                <p>Sjećaš li se ovog trenutka?</p>
-                <img src="images/1.jpg" alt="Uspomena 1">
-                <p class="caption">Bili smo tako mali, a ti si već tada voljela da šefuješ. 😂</p>
+                <p>Druže jesam kidara...</p>
+                <div class="image-layout layout-1">
+                    <img src="images/1.jpg" alt="Uspomena iz djetinjstva">
+                </div>
+                <p class="caption">Ti standardno izgledaš mnogo bolje na slikama nego uživo...</p>
             </div>
             <div class="nav-buttons">
                 <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
@@ -32,15 +36,610 @@
             </div>
         </div>
 
-        <!-- Strana sa dvije slike (Strana 2) -->
+        <!-- Strana 2 (2 slike) -->
         <div class="page">
             <div class="content">
-                <p>Onda smo malo porasli...</p>
-                <div class="image-grid">
-                    <img src="images/2.jpg" alt="Uspomena 2">
-                    <img src="images/3.jpg" alt="Uspomena 3">
+                <p>Jedan nutritivno bogati ručak i random slika kod mame :)</p>
+                <div class="image-layout layout-2">
+                    <img src="images/2.jpg" alt="Nutritivni ručak">
+                    <img src="images/6.jpg" alt="Slika kod mame">
                 </div>
-                <p class="caption">Vrijeme stvarno leti.</p>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 3 (2 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Malo random mojih slika na početku srednje škole hahaha</p>
+                <div class="image-layout layout-2">
+                    <img src="images/3.jpg" alt="Srednja škola početak">
+                    <img src="images/4.jpg" alt="Srednja škola izdanje">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 4 (2 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Naš hulk :)</p>
+                <div class="image-layout layout-2">
+                    <img src="images/5.jpg" alt="Naš hulk">
+                    <img src="images/17.jpg" alt="Slika sa hulkom">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 5 (4 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Ja šmeker kroz istoriju...</p>
+                <div class="image-layout layout-4">
+                    <img src="images/9.jpg" alt="Šmeker 1">
+                    <img src="images/14.jpg" alt="Šmeker 2">
+                    <img src="images/19.jpg" alt="Šmeker 3">
+                    <img src="images/27.jpg" alt="Šmeker 4">
+                </div>
+                <p class="caption">Ne znam da li se vidi dobro na slikama ali stvarno sam lijep hahahaha</p>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 6 (4 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Mate i ja u različitim izdanjima :)</p>
+                <div class="image-layout layout-4">
+                    <img src="images/15.jpg" alt="Mate i ja 1">
+                    <img src="images/13.jpg" alt="Mate i ja 2">
+                    <img src="images/25.jpg" alt="Mate i ja 3">
+                    <img src="images/28.jpg" alt="Mate i ja 4">
+                </div>
+                <p class="caption">Vrijeme stvarno leti...</p>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 7 (2 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Misliš da ti kao znaš Draška? Druže kad sam se ja sa njim slikao...</p>
+                <div class="image-layout layout-2">
+                    <img src="images/20.jpg" alt="Slika Draško 1">
+                    <img src="images/21.jpg" alt="Slika Draško 2">
+                </div>
+                <p class="caption">Pitaj Dragana ko je drugi lik pošto ga ti sigurno ne znaš hahaha</p>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 8 (1 slika) -->
+        <div class="page">
+            <div class="content">
+                <p>Imam čak i sa Vukanom sliku</p>
+                <div class="image-layout layout-1">
+                    <img src="images/38.jpg" alt="Slika Vukan">
+                </div>
+                <p class="caption">Nemoj ovu sliku pokazivati Joki neće pričati sa mnom</p>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 9 (4 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Ti i ja u svakakvim izdanjima hahaha</p>
+                <div class="image-layout layout-4">
+                    <img src="images/11.jpg" alt="Nas dvoje izdanje 1">
+                    <img src="images/16.jpg" alt="Nas dvoje izdanje 2">
+                    <img src="images/18.jpg" alt="Nas dvoje izdanje 3">
+                    <img src="images/23.jpg" alt="Nas dvoje izdanje 4">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 10 (4 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Mate dok je bio mali :)</p>
+                <div class="image-layout layout-4">
+                    <img src="images/29.jpg" alt="Mate mali 1">
+                    <img src="images/32.jpg" alt="Mate mali 2">
+                    <img src="images/34.jpg" alt="Mate mali 3">
+                    <img src="images/45.jpg" alt="Mate mali 4">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 11 (4 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Slike nastale dan prije i na 1. dan mog fakulteta :)</p>
+                <div class="image-layout layout-4">
+                    <img src="images/39.jpg" alt="Fakultet 1">
+                    <img src="images/40.jpg" alt="Fakultet 2">
+                    <img src="images/41.jpg" alt="Fakultet 3">
+                    <img src="images/42.jpg" alt="Fakultet 4">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 12 (2 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Ti wanna be ljepotica v1</p>
+                <div class="image-layout layout-2">
+                    <img src="images/43.jpg" alt="Ljepotica 1">
+                    <img src="images/52.jpg" alt="Ljepotica 2">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 13 (2 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>A kako stvarno izgledaš:</p>
+                <div class="image-layout layout-2">
+                    <img src="images/63.jpg" alt="Prava stvarnost 1">
+                    <img src="images/65.jpg" alt="Prava stvarnost 2">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 14 (4 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Ja šmeker v1</p>
+                <div class="image-layout layout-4">
+                    <img src="images/49.jpg" alt="Šmeker 5">
+                    <img src="images/50.jpg" alt="Šmeker 6">
+                    <img src="images/59.jpg" alt="Šmeker 7">
+                    <img src="images/62.jpg" alt="Šmeker 8">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 15 (1 slika) -->
+        <div class="page">
+            <div class="content">
+                <p>Kako stvarno izgledam:</p>
+                <div class="image-layout layout-1">
+                    <img src="images/64.jpg" alt="Pravi ja">
+                </div>
+                <p class="caption">Veljko Ražnatović...</p>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 16 (2 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Koliko ti je fejk osmijeh od 1 do Ivana</p>
+                <div class="image-layout layout-2">
+                    <img src="images/69.jpg" alt="Osmijeh 1">
+                    <img src="images/70.jpg" alt="Osmijeh 2">
+                </div>
+                <p class="caption">Ivana nasmij se ako si oteta</p>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 17 (2 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Onda nam je došla i mala dosadna Nikica :)</p>
+                <div class="image-layout layout-2">
+                    <img src="images/72.jpg" alt="Nika 1">
+                    <img src="images/125.jpg" alt="Nika 2">
+                </div>
+                <p class="caption">Nika i ja na drugoj slici baš lijepo kuliramo</p>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 18 (2 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Sjećaš se onih gotivnih i zanimljivih dedinih priča?</p>
+                <div class="image-layout layout-2">
+                    <img src="images/134.jpg" alt="Deda 1">
+                    <img src="images/135.jpg" alt="Deda 2">
+                </div>
+                <p class="caption">Ja se sjećam samo da si ponavljala 100 puta da, da, da...</p>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 19 (1 slika) -->
+        <div class="page">
+            <div class="content">
+                <p>Ova nam je iskreno baš lijepa slika</p>
+                <div class="image-layout layout-1">
+                    <img src="images/131.jpg" alt="Lijepa slika zajedno">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 20 (4 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Ti i ja kroz istoriju...</p>
+                <div class="image-layout layout-4">
+                    <img src="images/121.jpg" alt="Istorija 1">
+                    <img src="images/120.jpg" alt="Istorija 2">
+                    <img src="images/114.jpg" alt="Istorija 3">
+                    <img src="images/115.jpg" alt="Istorija 4">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 21 (4 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Ti i ja kroz istoriju v2...</p>
+                <div class="image-layout layout-4">
+                    <img src="images/111.jpg" alt="Istorija 5">
+                    <img src="images/110.jpg" alt="Istorija 6">
+                    <img src="images/107.jpg" alt="Istorija 7">
+                    <img src="images/106.jpg" alt="Istorija 8">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 22 (1 slika) -->
+        <div class="page">
+            <div class="content">
+                <p>Šatirani ja hahahahaha jesam kreten jeb'o ja sebe</p>
+                <div class="image-layout layout-1">
+                    <img src="images/102.jpg" alt="Šatirani ja">
+                </div>
+                <p class="caption">Ruku na srce ova slika je lijepa</p>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 23 (1 slika) -->
+        <div class="page">
+            <div class="content">
+                <p>Jedina u istoriji čovječanstva zajednička slika nas četvoro</p>
+                <div class="image-layout layout-1">
+                    <img src="images/99.jpg" alt="Svi zajedno">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 24 (1 slika) -->
+        <div class="page">
+            <div class="content">
+                <p>Ima i ova ali samo nas troje hahahaha</p>
+                <div class="image-layout layout-1">
+                    <img src="images/95.jpg" alt="Nas troje">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 25 (1 slika) -->
+        <div class="page">
+            <div class="content">
+                <p>Taman da te podsjetim koliko si lijepa</p>
+                <div class="image-layout layout-1">
+                    <img src="images/96.jpg" alt="Lijepa slika sestre">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 26 (4 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Ti i ja kroz istoriju v3...</p>
+                <div class="image-layout layout-4">
+                    <img src="images/94.jpg" alt="Istorija 9">
+                    <img src="images/93.jpg" alt="Istorija 10">
+                    <img src="images/92.jpg" alt="Istorija 11">
+                    <img src="images/91.jpg" alt="Istorija 12">
+                </div>
+                <p class="caption">Ruku na srce ova slika je lijepa</p>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 27 (1 slika) -->
+        <div class="page">
+            <div class="content">
+                <p>Dok ti je dijete jelo još nešto osim hrenovkica i margarite:</p>
+                <div class="image-layout layout-1">
+                    <img src="images/86.jpg" alt="Dijete jede">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 28 (2 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Vratimo se u moju osnovnu školu:</p>
+                <div class="image-layout layout-2">
+                    <img src="images/85.jpg" alt="Osnovna škola 1">
+                    <img src="images/81.jpg" alt="Osnovna škola 2">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 29 (1 slika) -->
+        <div class="page">
+            <div class="content">
+                <p>Ovo mi je Dragan poslao sliku vaše gotivne ciriške nedjelje:</p>
+                <div class="image-layout layout-1">
+                    <img src="images/77.jpg" alt="Ciriška nedjelja">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 30 (2 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Moj 23. rođendan, jbt 5 godina od punoljetstva prošlo...</p>
+                <div class="image-layout layout-2">
+                    <img src="images/128.jpg" alt="23. rođendan 1">
+                    <img src="images/129.jpg" alt="23. rođendan 2">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 31 (1 slika) -->
+        <div class="page">
+            <div class="content">
+                <p>Kako moj brat misli da izgleda, a kako stvarno izgleda:</p>
+                <div class="image-layout layout-1">
+                    <img src="images/124.jpg" alt="Nabildani ja">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 32 (2 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Mi bebe</p>
+                <div class="image-layout layout-2">
+                    <img src="images/123.jpg" alt="23. rođendan 1">
+                    <img src="images/109.jpg" alt="23. rođendan 2">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 33 (1 slika) -->
+        <div class="page">
+            <div class="content">
+                <p>Mi prije 2 godine:</p>
+                <div class="image-layout layout-1">
+                    <img src="images/139.jpg" alt="Simba prije 2 god">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 33 (1 slika) -->
+        <div class="page">
+            <div class="content">
+                <p>Vi na random pivi</p>
+                <div class="image-layout layout-1">
+                    <img src="images/87.jpg" alt="Random piva">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 34 (2 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Matija dok je učio koristiti telefon</p>
+                <div class="image-layout layout-2">
+                    <img src="images/56.jpg" alt="Matija 1">
+                    <img src="images/60.jpg" alt="Matija 2">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 35 (1 slika) -->
+        <div class="page">
+            <div class="content">
+                <p>Ja kad sam prestao da se šišam kao Veljko Ražnatović:</p>
+                <div class="image-layout layout-1">
+                    <img src="images/108.jpg" alt="Ja">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 36 (1 slika) -->
+        <div class="page">
+            <div class="content">
+                <p>Nemam komentar, random slika:</p>
+                <div class="image-layout layout-1">
+                    <img src="images/74.jpg" alt="Random slika">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 37 (2 slike) -->
+        <div class="page">
+            <div class="content">
+                <p>Ja sa cvikama u potkošulji bijem ženu i ja Draško Stanivuković</p>
+                <div class="image-layout layout-2">
+                    <img src="images/67.jpg" alt="Ja 1">
+                    <img src="images/76.jpg" alt="Ja 2">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 38 (1 slika) -->
+        <div class="page">
+            <div class="content">
+                <p>Ja na televiziji:</p>
+                <div class="image-layout layout-1">
+                    <img src="images/51.jpg" alt="Random slika">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 38 (1 slika) -->
+        <div class="page">
+            <div class="content">
+                <p>Nika dvije tačke</p>
+                <div class="image-layout layout-1">
+                    <img src="images/53.jpg" alt="Random slika">
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
+                <button class="btn primary-btn" onclick="nextPage()">Dalje ➡️</button>
+            </div>
+        </div>
+
+        <!-- Strana 38 (1 slika) -->
+        <div class="page">
+            <div class="content">
+                <p>:)</p>
+                <div class="image-layout layout-1">
+                    <img src="images/54.jpg" alt=":)">
+                </div>
             </div>
             <div class="nav-buttons">
                 <button class="btn secondary-btn" onclick="prevPage()">⬅️ Nazad</button>
@@ -56,7 +655,8 @@
                 <p>Sretan rođendan!</p>
             </div>
             <div class="nav-buttons">
-                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Prelistaj ponovo</button>
+                <button class="btn secondary-btn" onclick="prevPage()">⬅️ Ponovo</button>
+                <a href="images.zip" download="images.zip" class="btn primary-btn" style="text-decoration: none; display: flex; justify-content: center; align-items: center;">📥 Preuzmi slike</a>
             </div>
         </div>
 
