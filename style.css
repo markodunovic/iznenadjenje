@@ -126,6 +126,32 @@ p {
     color: #333;
 }
 
+/* Omogućava skrolanje samo za kontejner pisma */
+.content.letter {
+    overflow-y: auto; 
+    padding-right: 5px; /* Da tekst ne bude preblizu desnoj ivici ako se pojavi scrollbar */
+    justify-content: flex-start; /* Da dug tekst krene normalno od vrha */
+}
+
+/* Uljepšan, tanak scrollbar koji se uklapa u dizajn (za iPhone/Android) */
+.content.letter::-webkit-scrollbar {
+    width: 4px;
+}
+.content.letter::-webkit-scrollbar-thumb {
+    background: #d9777f;
+    border-radius: 10px;
+}
+
+/* Raspored dugmića jedno ispod drugog za zadnju stranu */
+.nav-buttons-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-shrink: 0; 
+}
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateX(10px); }
     to { opacity: 1; transform: translateX(0); }
